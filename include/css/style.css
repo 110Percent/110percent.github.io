@@ -1,70 +1,141 @@
 body,
 html {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    overflow: auto;
-    background: #2C2F33;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  overflow: auto;
+  background: #383c4a;
+  color: white;
+  font-family: Tajawal;
 }
 
-h1 {
-    font-family: Tajawal;
-    color: white;
-    text-shadow: 1px 1px 2px black;
-    font-size: 60px;
+a {
+  color: #5294e2;
+}
+
+#splash-content h1 {
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  font-size: 60px;
+  margin: 0px;
 }
 
 #splash-content {
-    transform: translate(-50%, -50%);
-    text-align: center;
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    width: 100%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  width: 100%;
 }
 
-#splash-icons>a {
-    text-decoration: none;
+.splash-text {
+  margin-top: -5px;
+  margin-bottom: 3rem;
+}
+
+#splash-icons > a {
+  text-decoration: none;
 }
 
 .splash-icon {
-    height: 32px;
-    width: 32px;
-    filter: drop-shadow(1px 1px 2px black);
-    margin-left: 8px;
-    margin-right: 8px;
+  height: 32px;
+  width: 32px;
+  filter: drop-shadow(1px 1px 2px black);
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 #discord-icon {
-    animation-delay: 0.1s;
+  animation-delay: 0.1s;
 }
 
 #reddit-icon {
-    animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 
 #steam-icon {
-    animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 
 #twitter-icon {
-    animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 
-.jarallax {
-    height: 100vh;
-    position: relative;
-    z-index: 0;
+.parallax {
+  background-image: url('../img/site-bg.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  z-index: 0;
 }
 
-.jarallax>.jarallax-img {
-    position: absolute;
-    object-fit: cover;
-    /* support for plugin https://github.com/bfred-it/object-fit-images */
-    font-family: 'object-fit: cover;';
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+.main-arrow {
+  background-image: url('../img/arrow-down.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1.5rem;
+  width: 3rem;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 0.6rem;
+}
+
+.bg-credit {
+  position: absolute;
+  right: 5px;
+  bottom: 2px;
+  color: white;
+  text-decoration: none;
+}
+
+.below {
+  text-align: center;
+  padding: 30px;
+}
+
+.section {
+  display: inline-block;
+  width: 60%;
+  text-align: left;
+  color: white;
+}
+
+.subsection {
+  padding-left: 1rem;
+}
+
+.s-header {
+  text-align: left;
+  color: #5294e2;
+}
+
+.s-content {
+  font-size: 1.3rem;
+}
+
+.bot-links {
+  padding: 3px;
+}
+
+.bot-links a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'Tajawal';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Tajawal'), local('Tajawal-Regular'),
+    url('../font/Tajawal.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
